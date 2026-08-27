@@ -1,5 +1,5 @@
-6. WEB-01 Compromise
-6.1 Overview
+#6. WEB-01 Compromise
+##6.1 Overview
 
 WEB-01 represents the first asset for which the supplied evidence establishes a high-confidence malicious compromise.
 
@@ -31,7 +31,7 @@ Web Shell Deployment
 
 The compromise of WEB-01 is therefore assessed as confirmed.
 
-6.2 WordPress Authentication Abuse
+##6.2 WordPress Authentication Abuse
 Evidence
 09:00:00 - GET /wp-login.php
 09:00:01–09:00:34 - POST /wp-login.php (34 attempts)
@@ -48,7 +48,7 @@ The available evidence does not expose the submitted credentials or individual a
 
 However, the subsequent access to the administrative interface provides strong evidence that the attacker obtained authenticated access.
 
-6.3 Transition to Authenticated WordPress Access
+##6.3 Transition to Authenticated WordPress Access
 Evidence
 09:00:35 - GET /wp-admin/
 09:00:36 - POST /admin-ajax.php
@@ -75,7 +75,7 @@ This strongly indicates that the authentication activity resulted in, or was fol
 
 The exact WordPress account used for this session is not identified in the supplied HTTP logs. Consequently, the report should not attribute the successful session to maryam or another specific account without additional authentication telemetry.
 
-6.4 Access to Exposed Backup Archive
+##6.4 Access to Exposed Backup Archive
 Evidence
 09:00:37 - GET /backup.tar.gz
 
@@ -95,7 +95,7 @@ indicating successful HTTP responses of 100 MiB per request.
 
 The request itself establishes access to the archive, but does not by itself prove that its contents were successfully exfiltrated outside the environment. That distinction becomes important when evaluating the later repeated downloads.
 
-6.5 SSH Access to WEB-01
+##6.5 SSH Access to WEB-01
 Evidence
 09:05:00 - Accepted password for www-data from 45.33.22.11
 09:05:01 - session opened
@@ -119,7 +119,7 @@ Therefore:
 
 Confirmed: attacker-controlled access to WEB-01 through SSH.
 Not confirmed: the mechanism by which the www-data credentials were obtained.
-6.6 Post-Compromise Host Reconnaissance
+##6.6 Post-Compromise Host Reconnaissance
 Evidence
 09:05:05 - whoami && hostname && ip a
 
@@ -141,7 +141,7 @@ Whether the system provides access to additional network segments.
 
 This is materially different from routine application administration because the commands occur immediately after external SSH authentication and are followed by payload deployment.
 
-6.7 Payload Retrieval and Execution
+##6.7 Payload Retrieval and Execution
 Evidence
 09:05:10 - wget update.sh
 09:05:15 - downloading secondary payload
@@ -166,7 +166,7 @@ The supplied logs do not provide the contents or cryptographic hash of update.sh
 
 Nevertheless, its role in the attack chain is strongly supported by the subsequent system modifications.
 
-6.8 Security Control Modification
+##6.8 Security Control Modification
 Evidence
 09:05:25 - systemctl stop nginx
 09:05:30 - systemctl stop ufw
@@ -192,7 +192,7 @@ or prepare the host for additional operations.
 
 The evidence confirms that the commands were executed; the precise operational purpose cannot be determined solely from these two events.
 
-6.9 Permission Weakening
+##6.9 Permission Weakening
 Evidence
 09:05:35 - chmod 777 /var/www/html -R
 
@@ -219,7 +219,7 @@ Web-root permissions weakened
 
 This provides strong evidence that the attacker was actively modifying the host rather than merely inspecting it.
 
-6.10 Privilege Persistence Through sudoers
+##6.10 Privilege Persistence Through sudoers
 Evidence
 09:05:40 - echo 'www-data ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
@@ -243,7 +243,7 @@ Therefore:
 The attacker established a configuration that would allow www-data to obtain
 root-level execution, but the supplied evidence does not independently prove
 that root privileges were subsequently exercised.
-6.11 Web Shell Deployment
+##6.11 Web Shell Deployment
 Evidence
 09:06:00 - GET /shell.php
 09:06:01 - POST /shell.php
@@ -280,7 +280,7 @@ For a formal incident report, the strongest defensible wording is:
 
 A PHP resource named shell.php was accessed immediately following confirmed host compromise and privilege/security-control modifications. The available evidence is strongly indicative of a deployed web shell, although the file-creation event itself is not present in the supplied telemetry.
 
-6.12 Repeated Access to backup.tar.gz
+##6.12 Repeated Access to backup.tar.gz
 Evidence
 09:06:02–09:15:30
 GET /backup.tar.gz
@@ -321,7 +321,7 @@ Therefore, the correct assessment is:
 
 The evidence demonstrates large-scale repeated access to a sensitive backup archive and provides strong evidence of attempted or probable data transfer. Confirmed data exfiltration requires corroboration from network-flow, proxy, packet, or endpoint telemetry.
 
-6.13 WEB-01 Attack Chain Reconstruction
+##6.13 WEB-01 Attack Chain Reconstruction
 
 Based exclusively on the supplied evidence, the most defensible reconstruction is:
 
@@ -384,7 +384,7 @@ Repeated backup archive access
 
 This sequence represents a coherent compromise rather than a collection of unrelated suspicious events.
 
-6.14 Confidence Assessment
+##6.14 Confidence Assessment
 Finding	Confidence	Basis
 WEB-01 was compromised	High	Multiple independent malicious activities
 45.33.22.11 is associated with the compromise	High	WordPress activity followed by SSH authentication from same source
@@ -398,7 +398,7 @@ Web-root permissions were weakened	High	Recursive chmod 777
 Privilege persistence was established	High	/etc/sudoers modification
 shell.php is a web shell	High, but not directly proven	Access pattern + surrounding compromise activity
 10.74 GiB was successfully exfiltrated	Not confirmed	HTTP response size does not prove complete external receipt
-6.15 MITRE ATT&CK Alignment
+##6.15 MITRE ATT&CK Alignment
 
 The observed WEB-01 activity maps to several ATT&CK behaviors:
 
@@ -414,7 +414,7 @@ Repeated backup.tar.gz retrieval	Potential T1567.002 – Exfiltration to Cloud S
 
 The MITRE mapping should remain evidence-driven. In particular, a large HTTP download should not automatically be classified as a specific exfiltration technique without establishing where the data went.
 
-6.16 Incident Significance
+##6.16 Incident Significance
 
 WEB-01 should be treated as a confirmed compromised server and a probable staging point for subsequent intrusion activity.
 
