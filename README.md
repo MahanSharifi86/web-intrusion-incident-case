@@ -1,6 +1,3 @@
-حتماً. با توجه به ساختار فعلی Repository تو، این نسخه را برای **`README.md` اصلی** بگذار. ساختار قبلی داخل README هنوز قدیمی است و باید با این نسخه جایگزین شود. ([GitHub][1])
-
-````markdown
 # Web Intrusion Incident Case
 
 ## Incident Response & Threat Hunting Investigation
