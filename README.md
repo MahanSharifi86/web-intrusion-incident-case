@@ -1,11 +1,13 @@
+حتماً. با توجه به ساختار فعلی Repository تو، این نسخه را برای **`README.md` اصلی** بگذار. ساختار قبلی داخل README هنوز قدیمی است و باید با این نسخه جایگزین شود. ([GitHub][1])
+
 ````markdown
 # Web Intrusion Incident Case
 
 ## Incident Response & Threat Hunting Investigation
 
-This repository documents an evidence-driven investigation of a simulated multi-stage enterprise intrusion involving a web application compromise, credential abuse, persistence, command-and-control activity, lateral movement, database access, and potential data exfiltration.
+This repository documents an evidence-driven investigation of a simulated multi-stage enterprise intrusion involving web application compromise, credential abuse, persistence, command-and-control activity, lateral movement, database access, and potential data exfiltration.
 
-The investigation reconstructs the attack lifecycle from the available telemetry and distinguishes confirmed observations from analytical assessments and unconfirmed hypotheses.
+The investigation reconstructs the attack lifecycle from available telemetry and distinguishes confirmed observations from analytical assessments and unconfirmed hypotheses.
 
 ---
 
@@ -32,9 +34,9 @@ The investigation aims to determine:
 
 - The most likely initial access vector.
 - The sequence of attacker activity across affected systems.
-- Whether the web server was successfully compromised.
+- Whether WEB-01 was successfully compromised.
 - Whether persistence mechanisms were established.
-- Whether credentials were compromised or reused.
+- Whether credentials were compromised or abused.
 - Whether lateral movement occurred.
 - The nature and significance of command-and-control activity.
 - What sensitive data was accessed.
@@ -53,16 +55,16 @@ The available evidence indicates a multi-stage compromise involving:
 - Successful access to the WordPress administrative interface.
 - Repeated retrieval of `backup.tar.gz`.
 - Host-level access through the `www-data` account.
-- Payload retrieval and execution on `WEB-01`.
+- Payload retrieval and execution on WEB-01.
 - Modification of host security controls and filesystem permissions.
 - Deployment and subsequent use of a web shell.
 - Persistence through modification of `sudoers`.
-- Suspicious privileged activity on `PC-MANAGER`.
+- Suspicious privileged activity on PC-MANAGER.
 - Encoded PowerShell execution.
 - Creation of the `SysUpdate` service.
 - Repeated outbound connections to `194.34.132.15:4444`.
 - Database activity involving WordPress authentication data.
-- Subsequent suspicious activity on `DC-01`.
+- Subsequent suspicious activity on DC-01.
 - Evidence consistent with lateral movement and expansion of the compromise.
 - Repeated access to potentially sensitive backup data.
 
@@ -118,44 +120,31 @@ web-intrusion-incident-case/
 │   ├── README.md
 │   └── raw-logs.txt
 │
-├── 02-Incident-Summary/
-│   └── README.md
-│
-├── 03-Incident-Analysis/
-│   ├── 01-Incident-Scope-and-Affected-Assets.md
-│   ├── 02-Evidence-Summary.md
-│   ├── 03-Confirmed-Attack-Timeline.md
-│   ├── 04-Initial-Access-Assessment.md
-│   ├── 05-WEB-01-Compromise.md
-│   ├── 06-Web-Shell-and-Persistence.md
-│   ├── 07-Credential-and-Account-Compromise.md
-│   ├── 08-Command-and-Control-Activity.md
-│   ├── 09-Lateral-Movement.md
-│   ├── 10-Data-Access-and-Potential-Exfiltration.md
-│   ├── 11-Attack-Chain-Reconstruction.md
-│   ├── 12-MITRE-ATT&CK-Mapping.md
-│   ├── 13-Indicators-of-Compromise.md
-│   ├── 14-Impact-Assessment.md
-│   ├── 15-Evidence-Gaps-and-Unconfirmed-Findings.md
-│   ├── 16-Containment-and-Remediation-Recommendations.md
-│   └── 17-Final-Incident-Assessment.md
-│
-├── 04-Conclusions/
-│   └── README.md
-│
-└── evidence/
+└── 02-Incident-Report/
     └── README.md
 ````
+
+### `01-Scenario-and-Raw-Logs`
+
+Contains the original simulated scenario and raw telemetry used as the evidence base for the investigation.
+
+The raw logs are intentionally preserved separately from analytical conclusions to maintain a clear distinction between source evidence and analyst assessment.
+
+### `02-Incident-Report`
+
+Contains the complete incident response case file, including the full investigation, attack timeline, compromise analysis, attack-chain reconstruction, MITRE ATT&CK mapping, impact assessment, evidence gaps, and remediation recommendations.
 
 ---
 
 ## Analytical Principles
 
-This investigation follows several core principles used in professional incident response:
+This investigation follows several core principles used in professional incident response.
 
 ### Evidence Before Attribution
 
-Conclusions are based on observed telemetry and correlated evidence. Suspicious behavior is not automatically treated as confirmed malicious activity without supporting evidence.
+Conclusions are based on observed telemetry and correlated evidence.
+
+Suspicious behavior is not automatically treated as confirmed malicious activity without supporting evidence.
 
 ### Fact, Assessment, and Hypothesis Separation
 
@@ -179,15 +168,15 @@ Events are correlated across multiple assets rather than investigated in isolati
 
 The case focuses on three central questions:
 
-### 1. Where did the intrusion begin?
+### 1. Where Did the Intrusion Begin?
 
 Determine the most defensible initial access hypothesis based on the available authentication, web application, and host telemetry.
 
-### 2. How did the compromise propagate?
+### 2. How Did the Compromise Propagate?
 
 Establish the relationship between `WEB-01`, `PC-MANAGER`, `DB-01`, and `DC-01`, including evidence of credential abuse, lateral movement, execution, and persistence.
 
-### 3. Was sensitive data exfiltrated?
+### 3. Was Sensitive Data Exfiltrated?
 
 Determine whether repeated access to `backup.tar.gz` represents confirmed data exfiltration or only evidence of repeated data retrieval, and identify what additional telemetry would be required for confirmation.
 
@@ -198,6 +187,8 @@ Determine whether repeated access to `backup.tar.gz` represents confirmed data e
 Observed attacker behaviors are mapped to relevant MITRE ATT&CK techniques where sufficient evidence exists.
 
 The mapping prioritizes behavioral evidence over superficial indicators such as individual port numbers, process names, or isolated events.
+
+The complete mapping is documented in the incident report.
 
 ---
 
@@ -223,7 +214,3 @@ Focus Areas:
 This repository contains a simulated incident-response scenario created for defensive security training, threat hunting, and SOC investigation practice.
 
 The infrastructure, identities, IP addresses, domains, and attack activity represented in this repository are part of the simulated environment and should not be interpreted as evidence of a real-world incident.
-
-```
-```
-
