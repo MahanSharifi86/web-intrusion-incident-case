@@ -10,18 +10,18 @@ The investigation reconstructs the attack lifecycle from available telemetry and
 
 ## Incident Overview
 
-| Category | Assessment |
-|---|---|
-| Incident Type | Multi-Stage Enterprise Intrusion |
-| Primary Attack Surface | Web Application / Web Server |
-| Severity | Critical |
-| Investigation Focus | SOC / Incident Response / Threat Hunting |
-| Primary Affected Assets | WEB-01, PC-MANAGER, DC-01, DB-01 |
-| Key External Infrastructure | 45.33.22.11, 194.34.132.15 |
-| Primary Compromised Accounts | www-data, maryam, dbadmin |
-| Primary C2 Indicator | 194.34.132.15:4444 |
-| Investigation Approach | Evidence Correlation & Attack Chain Reconstruction |
-| Assessment Status | Based on Available Telemetry |
+| Category                    | Assessment                                         |
+| --------------------------- | -------------------------------------------------- |
+| Incident Type               | Multi-Stage Enterprise Intrusion                   |
+| Primary Attack Surface      | Web Application / Web Server                       |
+| Severity                    | Critical                                           |
+| Investigation Focus         | SOC / Incident Response / Threat Hunting           |
+| Primary Affected Assets     | WEB-01, PC-MANAGER, DC-01, DB-01                   |
+| Key External Infrastructure | 45.33.22.11, 194.34.132.15                         |
+| Primary Affected Accounts   | www-data, maryam, dbadmin                          |
+| Primary C2 Indicator        | 194.34.132.15:4444                                 |
+| Investigation Approach      | Evidence Correlation & Attack Chain Reconstruction |
+| Assessment Status           | Based on Available Telemetry                       |
 
 ---
 
@@ -29,18 +29,18 @@ The investigation reconstructs the attack lifecycle from available telemetry and
 
 The investigation aims to determine:
 
-- The most likely initial access vector.
-- The sequence of attacker activity across affected systems.
-- Whether WEB-01 was successfully compromised.
-- Whether persistence mechanisms were established.
-- Whether credentials were compromised or abused.
-- Whether lateral movement occurred.
-- The nature and significance of command-and-control activity.
-- What sensitive data was accessed.
-- Whether data exfiltration can be confirmed from the available evidence.
-- The operational impact of the intrusion.
-- Which findings are confirmed and which remain unconfirmed due to evidence gaps.
-- Appropriate containment and remediation actions.
+* The most likely initial access vector.
+* The sequence of attacker activity across affected systems.
+* Whether WEB-01 was successfully compromised.
+* Whether persistence mechanisms were established.
+* Whether credentials were compromised or abused.
+* Whether lateral movement occurred.
+* The nature and significance of command-and-control activity.
+* What sensitive data was accessed.
+* Whether data exfiltration can be confirmed from the available evidence.
+* The operational impact of the intrusion.
+* Which findings are confirmed and which remain unconfirmed due to evidence gaps.
+* Appropriate containment and remediation actions.
 
 ---
 
@@ -48,22 +48,22 @@ The investigation aims to determine:
 
 The available evidence indicates a multi-stage compromise involving:
 
-- Repeated authentication attempts against the WordPress login interface.
-- Successful access to the WordPress administrative interface.
-- Repeated retrieval of `backup.tar.gz`.
-- Host-level access through the `www-data` account.
-- Payload retrieval and execution on WEB-01.
-- Modification of host security controls and filesystem permissions.
-- Deployment and subsequent use of a web shell.
-- Persistence through modification of `sudoers`.
-- Suspicious privileged activity on PC-MANAGER.
-- Encoded PowerShell execution.
-- Creation of the `SysUpdate` service.
-- Repeated outbound connections to `194.34.132.15:4444`.
-- Database activity involving WordPress authentication data.
-- Subsequent suspicious activity on DC-01.
-- Evidence consistent with lateral movement and expansion of the compromise.
-- Repeated access to potentially sensitive backup data.
+* Repeated authentication attempts against the WordPress login interface.
+* Subsequent access to the WordPress administrative interface.
+* Repeated retrieval of `backup.tar.gz`.
+* Host-level access through the `www-data` account.
+* Payload retrieval and execution on WEB-01.
+* Modification of host security controls and filesystem permissions.
+* Deployment and subsequent use of a web shell.
+* Persistence through modification of `sudoers`.
+* Suspicious privileged activity on PC-MANAGER.
+* Encoded PowerShell execution.
+* Creation of the `SysUpdate` service.
+* Repeated outbound connections to `194.34.132.15:4444`.
+* Database activity involving WordPress authentication data.
+* Subsequent suspicious activity on DC-01.
+* Evidence consistent with lateral movement and expansion of the compromise.
+* Repeated access to potentially sensitive backup data.
 
 Findings are assessed according to the strength of the available evidence rather than solely on behavioral assumptions.
 
@@ -84,7 +84,7 @@ The investigation follows an evidence-driven incident-response methodology:
 9. **Containment and Remediation Planning**
 10. **Final Incident Assessment**
 
-Where possible, every significant assessment is supported by the corresponding log evidence.
+Where possible, significant assessments are supported by the corresponding log evidence.
 
 ---
 
@@ -92,17 +92,17 @@ Where possible, every significant assessment is supported by the corresponding l
 
 The case incorporates multiple telemetry sources, including:
 
-- Nginx access logs
-- Linux authentication logs
-- Sudo activity
-- Windows Security Event Logs
-- Process creation events
-- Service creation events
-- Windows Filtering Platform events
-- Database activity
-- Web application activity
-- Network connection telemetry
-- Authentication events
+* Nginx access logs
+* Linux authentication logs
+* Sudo activity
+* Windows Security Event Logs
+* Process creation events
+* Service creation events
+* Windows Filtering Platform events
+* Database activity
+* Web application activity
+* Network connection telemetry
+* Authentication events
 
 ---
 
@@ -119,7 +119,7 @@ web-intrusion-incident-case/
 │
 └── 02-Incident-Report/
     └── README.md
-````
+```
 
 ### `01-Scenario-and-Raw-Logs`
 
@@ -129,7 +129,7 @@ The raw logs are intentionally preserved separately from analytical conclusions 
 
 ### `02-Incident-Report`
 
-Contains the complete incident response case file, including the full investigation, attack timeline, compromise analysis, attack-chain reconstruction, MITRE ATT&CK mapping, impact assessment, evidence gaps, and remediation recommendations.
+Contains the complete incident response case file, including the investigation, attack timeline, compromise analysis, attack-chain reconstruction, MITRE ATT&CK mapping, impact assessment, evidence gaps, and remediation recommendations.
 
 ---
 
@@ -153,7 +153,7 @@ Findings are distinguished between:
 
 ### Timeline-Based Analysis
 
-Individual events are evaluated within their temporal context to identify relationships between authentication, execution, persistence, lateral movement, C2 activity, and data access.
+Individual events are evaluated within their temporal context to identify relationships between authentication, execution, persistence, lateral movement, command-and-control activity, and data access.
 
 ### Cross-Host Correlation
 
